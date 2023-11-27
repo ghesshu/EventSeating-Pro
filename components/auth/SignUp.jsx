@@ -83,11 +83,11 @@ const SignUp = () => {
   useEffect(() => {
     setTimeout(() => {
       setError("");
-    }, 3000);
+    }, 5000);
   }, [error]);
 
   return (
-    <div className="w-[100svw] h-[100svh] relative ">
+    <div className="w-screen h-screen relative  overflow-hidden">
       <div className="w-full h-full">
         <Image
           src={"/bg.jpg"}
@@ -96,17 +96,21 @@ const SignUp = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="absolute top-0 bg-black/50 flex items-center justify-center w-full h-full">
+      <div className="absolute top-0 bg-black/50 flex items-center justify-center w-screen h-screen overflow-hidden ">
         <div className="md:w-[90%] md:h-[90%] w-full h-full   max-w-6xl md:p-8 flex  items-center justify-between">
           <div className="bg-neutral-100 text-black  h-full w-full lg:w-1/2 p-8">
-            <h1 className="text-2xl ">LOGO</h1>
+            <h1 className="text-2xl font-extrabold ">LOGO</h1>
 
             <div className="flex items-center  h-full w-full">
-              <div className="flex flex-col w-full p-8 -mt-32">
-                <h1 className="text-center my-9 text-3xl">Sign Up</h1>
+              <div className="flex flex-col w-full p-8 -mt-24">
+                <h1 className="text-center mt-14 my- text-2xl font-bold ">
+                  Sign Up
+                </h1>
 
-                <div className="h-[3rem] text-sm text-red-600">
-                  <h1 className="text-center ">{error}</h1>
+                <div className="h-[3rem] text-sm text-red-600 flex items-center justify-center  ">
+                  <h1 className="text-center font-bold animate-bounce italic ">
+                    {error}
+                  </h1>
                 </div>
 
                 <form action="">
@@ -194,9 +198,9 @@ const SignUp = () => {
                         <h1 className="p-[0.25rem] border-2 border-white h-[1rem] w-[1rem] animate-spin"></h1>
                       </button>
 
-                      <div className="flex">
+                      <div className="flex mt-4">
                         <Link href="/">
-                          <h1 className="hover:border-b-2 hover:border-black transition ease-in-out duration-500">
+                          <h1 className="border-gray-100 border-b-2 smd:hover:border-blue-600 transition ease-in-out duration-500 text-sm text-blue-600">
                             Already have an Account? Login
                           </h1>
                         </Link>
