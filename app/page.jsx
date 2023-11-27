@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { MdAlternateEmail } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
@@ -11,13 +11,13 @@ import { redirect } from "next/navigation";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [logB, setLogB] = React.useState("block");
-  const [loadB, setLoadB] = React.useState("hidden");
-  const [email, setEmail] = React.useState("");
-  const [error, setError] = React.useState("");
-  const [password, setPassword] = React.useState("");
+  const [logB, setLogB] = useState("block");
+  const [loadB, setLoadB] = useState("hidden");
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+  const [password, setPassword] = useState("");
   const router = useRouter();
-  const [showPassword, setShowPassword] = React.useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -125,7 +125,7 @@ export default function Home() {
                       <div className="flex">
                         <Link href="/sign-up">
                           <h1 className="hover:border-b-2 hover:border-black transition ease-in-out duration-500">
-                            Don't have an Account? sign Up
+                            Dont have an Account? sign Up
                           </h1>
                         </Link>
                       </div>

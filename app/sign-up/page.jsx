@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { MdAlternateEmail } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
@@ -11,22 +11,22 @@ import { redirect } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { FiUser } from "react-icons/fi";
 
-const page = () => {
-  const [logB, setLogB] = React.useState("block");
-  const [loadB, setLoadB] = React.useState("hidden");
-  const [username, setUsername] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [error, setError] = React.useState("");
-  const [password, setPassword] = React.useState("");
-  const [cPassword, setCPassword] = React.useState("");
+const Page = () => {
+  const [logB, setLogB] = useState("block");
+  const [loadB, setLoadB] = useState("hidden");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+  const [password, setPassword] = useState("");
+  const [cPassword, setCPassword] = useState("");
   const router = useRouter();
-  const [showPassword, setShowPassword] = React.useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const togglePass = () => {
     setShowPassword(!showPassword);
   };
 
-  const [showCPass, setCShowPass] = React.useState(false);
+  const [showCPass, setCShowPass] = useState(false);
 
   const togglePassC = () => {
     setCShowPass(!showCPass);
@@ -80,7 +80,7 @@ const page = () => {
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setError("");
     }, 3000);
@@ -216,7 +216,7 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
 
 // "use client";
 // import React from "react";
@@ -232,21 +232,21 @@ export default page;
 // import { FiUser } from "react-icons/fi";
 
 // export default function page() {
-//   const [logB, setLogB] = React.useState("block");
-//   const [loadB, setLoadB] = React.useState("hidden");
-//   const [username, setUsername] = React.useState("");
-//   const [email, setEmail] = React.useState("");
-//   const [error, setError] = React.useState("");
-//   const [password, setPassword] = React.useState("");
-//   const [cPassword, setCPassword] = React.useState("");
+//   const [logB, setLogB] = useState("block");
+//   const [loadB, setLoadB] = useState("hidden");
+//   const [username, setUsername] = useState("");
+//   const [email, setEmail] = useState("");
+//   const [error, setError] = useState("");
+//   const [password, setPassword] = useState("");
+//   const [cPassword, setCPassword] = useState("");
 //   const router = useRouter();
-//   const [showPassword, setShowPassword] = React.useState(false);
+//   const [showPassword, setShowPassword] = useState(false);
 
 //   const togglePass = () => {
 //     setShowPassword(!showPassword);
 //   };
 
-//   const [showCPass, setCShowPass] = React.useState(false);
+//   const [showCPass, setCShowPass] = useState(false);
 
 //   const togglePassC = () => {
 //     setCShowPass(!showCPass);
@@ -300,7 +300,7 @@ export default page;
 //     }
 //   };
 
-//   React.useEffect(() => {
+//   useEffect(() => {
 //     setTimeout(() => {
 //       setError("");
 //     }, 3000);
