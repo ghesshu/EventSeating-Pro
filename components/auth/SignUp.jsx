@@ -98,7 +98,7 @@ const SignUp = () => {
       </div>
       <div className="absolute top-0 bg-black/50 flex items-center justify-center w-screen h-screen overflow-hidden ">
         <div className="md:w-[90%] md:h-[90%] w-full h-full   max-w-6xl md:p-8 flex  items-center justify-between">
-          <div className="bg-neutral-100 text-black  h-full w-full lg:w-1/2 p-8">
+          <div className=" bg-neutral-100/90 text-black  h-full w-full lg:w-1/2 p-8">
             <h1 className="text-2xl font-extrabold ">LOGO</h1>
 
             <div className="flex items-center  h-full w-full">
@@ -187,7 +187,7 @@ const SignUp = () => {
                     <div className="w-full flex flex-col items-center gap-4 justify-center mt-4">
                       <button
                         onClick={handleSub}
-                        className={`${logB} bg-black hover:bg-white hover:text-black hover:border-2 border-black w-[19.5rem] text-white h-[2.6rem] transition ease-in-out duration-500`}
+                        className={`${logB} bg-black hover:bg-white/0 hover:text-black hover:border-2 border-black w-[19.5rem] text-white h-[2.6rem] transition ease-in-out duration-500`}
                       >
                         Sign Up
                       </button>
@@ -200,7 +200,7 @@ const SignUp = () => {
 
                       <div className="flex mt-4">
                         <Link href="/">
-                          <h1 className="border-gray-100 border-b-2 smd:hover:border-blue-600 transition ease-in-out duration-500 text-sm text-blue-600">
+                          <h1 className="border-gray-100/0 border-b-2 smd:hover:border-blue-600 transition ease-in-out duration-500 text-sm text-blue-600">
                             Already have an Account? Login
                           </h1>
                         </Link>
@@ -211,7 +211,7 @@ const SignUp = () => {
               </div>
             </div>
           </div>
-          <div className="hidden w-1/2 h-full p-8 lg:flex justify-center items-center text-4xl border-4">
+          <div className="hidden w-1/2 h-full p-8 lg:flex justify-center items-center text-4xl border-4 border-neutral-100/90">
             <h1>LOGO</h1>
           </div>
         </div>
