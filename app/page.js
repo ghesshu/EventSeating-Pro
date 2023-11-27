@@ -59,7 +59,7 @@ export default function Home() {
         />
       </div>
       <div className="absolute top-0 bg-black/50 flex items-center justify-center w-full h-full">
-        <div className="w-[90%] h-[90%]   max-w-6xl p-8 flex  items-center justify-between">
+        <div className="md:w-[90%] md:h-[90%] w-full h-full   max-w-6xl md:p-8  flex  items-center justify-between">
           <div className="bg-neutral-100 text-black  h-full w-full lg:w-1/2 p-8">
             <h1 className="text-2xl ">LOGO</h1>
 
