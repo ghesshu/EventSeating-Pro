@@ -127,7 +127,7 @@ export default function Login() {
                     <div className="w-full flex flex-col items-center gap-4 justify-center mt-4">
                       <button
                         onClick={handleSub}
-                        className={`${logB} bg-black hover:bg-white/0 hover:text-black hover:border-2 border-black w-[19.5rem] text-white h-[2.6rem] transition ease-in-out duration-500`}
+                        className={`${logB} bg-black md:hover:bg-white/0 md:hover:text-black md:hover:border-2 border-black w-[19.5rem] text-white h-[2.6rem] transition ease-in-out duration-500`}
                       >
                         Login
                       </button>
